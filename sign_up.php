@@ -1,9 +1,30 @@
+
+<?php
+    global $error;
+    
+    function add_user($screenName, $name, $password, $cardNumber){
+        $db = mysqli_connect("localhost", "root", "", "cinema_db");
+            //$password = md5($password);
+        $query = "INSERT INTO users (name, user_name, password, card_number, balance, access) ";
+        $query .= "VALUES ('{$screenName}', '{$name}', '{$password}', '{$cardNumber}' , 500, 'user')";
+        $result = mysqli_query($db,$query);
+        if($result){
+             header('Location: index.php?log=loggedin&access=user'.'&name='.$screenName); 
+        }else{
+            header("location: sign_up.php");
+        }
+        
+    }
+ 
+?>
+
 <!DOCTYPE html>
 <html>
     <header>
         <link href="Styles.css" type="text/css" rel="stylesheet" />
     </header>
     <body>
+     
         
     <ul>
             <!--Headers-->
@@ -35,6 +56,7 @@
                      - <input type="text" name="c3" id="credit_card" maxlength="4" value="">
                      - <input type="text" name="c4" id="credit_card" maxlength="4" value="">
                 </h2>
+
                 <!--Display Error Message Here-->
                 <?php
                     if(isset($_POST['submit_forms'])){
@@ -58,6 +80,7 @@
                                             $screenName=$_POST['u_screenName'];
                                             $cardNumber=$_POST['c1']."-".$_POST['c2']."-".$_POST['c3']."-".$_POST['c4'];
                                             echo $cardNumber;
+                                            add_user($screenName,$name,$password, $cardNumber);
                                         }else{
                                             echo "<h3>Invalid Card Number</h3>";
                                         }
@@ -74,6 +97,7 @@
                             echo "<h3>Please Input A Name.</h3>";
                         }
                         //echo $_POST['u_name'].$_POST['u_password'].$_POST['u_screenName'];
+                        
                     }else{
                         echo "<h3>Please Fill-Up all Fields.</h3>";
                     }
@@ -88,5 +112,8 @@
             
 
         </p>
+        <div>
+            <?php echo $error; ?>
+        </div>
     </body>
 </html>
