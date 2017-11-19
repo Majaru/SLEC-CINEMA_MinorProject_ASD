@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Register A New Account</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/Design.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/newDesign.css">
+    </head>
     <body class="bodysign_Up" id="fontsALL">
         <h2 class="headers">Register A New Account</h2>
-        <div id="log_in_forms">
         <div class="sign_Up">
             <!--Page Content-->
             <form action="sign_up.php" method="post">
