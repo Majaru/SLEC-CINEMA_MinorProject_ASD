@@ -2,12 +2,22 @@
 <html>
     <head>
         <title>Log In</title>
-      
+        <link rel="stylesheet" type="text/css" href="../CSS/Design.css">
+        <link href="../CSS/Styles.css" type="text/css" rel="stylesheet" />
+        <link href="../CSS/Design.css" type="text/css" rel="stylesheet" />
+        <link href="../CSS/newDesign.css" type="text/css" rel="stylesheet" />
+        <style>
+           .vl {
+                border-left: 1px solid white;
+                height: 270px;
+                position: absolute;
+                left: 56%;
+                margin-left: -3px;
+                top: 9%;
+            }
+        </style>
     </head>
     <body class="bodyLog_in" id="fontsALL">
-        
-
-
         <h2 class="headers">Log In With Your Account</h2>
             
             <div class="log_in_forms_for_Log_in">
