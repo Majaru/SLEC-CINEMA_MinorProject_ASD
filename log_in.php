@@ -18,6 +18,9 @@
         </style>
     </head>
     <body class="bodyLog_in" id="fontsALL">
+        
+
+
         <h2 class="headers">Log In With Your Account</h2>
             
             <div class="log_in_forms_for_Log_in">
@@ -35,6 +38,39 @@
                     <input type="password" name="user_password" value="" size="80%">
                 <br><br>
                 <button type="submit" name="submit" value="login" class="button" >Log In</button>
+                <?php
+                    include('functions.php');
+                    if(isset($_POST['submit']) && $_POST['submit']=='login'){
+                        //Assign
+                        $email=$_POST['user_name'];
+                        $pass=$_POST['user_password'];
+                        //Retrive
+                        $cline=return_values('*','users','where email="'.$email.'"',1);
+                        //Validate
+                        $valid=true;
+                        if(sizeof($cline)<1){
+                            $valid=false;
+                        }else if($pass!=$cline[0][2]){
+                            $valid=false;
+                        }
+                        //Redirect
+                        if($valid==true){
+                            if($cline[0][1]=='admin' && $cline[0][2]=='admin' && $cline[0][3]=='Administrator' && $cline[0][4]=='Rights'){
+                                echo '<html><body>
+                                    <meta http-equiv="refresh" content="0; URL=admin_page.php">
+                                    <meta name="keywords" content="automatic redirection">
+                                </body></html>';
+                            }else{
+                                echo '<html><body>
+                                    <meta http-equiv="refresh" content="0; URL=../index.php?n='.$cline[0][3].'&i='.$cline[0][0].'">
+                                    <meta name="keywords" content="automatic redirection">
+                                </body></html>';
+                            } 
+                        }else if ($valid==false) {
+                            echo'<h3 id="error_message" width="30" >No User Was Found.<h3>';
+                        }
+                    }
+                ?>
             </form>
             </div>
         <!--Form Processing-->
