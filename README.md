@@ -1,1 +1,1 @@
-# SLEC-CINEMA_MinorProject_ASD
+# SLEC-EVENT-MANAGER_MinorProject_ASD
