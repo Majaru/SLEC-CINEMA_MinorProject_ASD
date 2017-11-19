@@ -7,6 +7,13 @@
     </head>
     <body class="bodysign_Up" id="fontsALL">
         <h2 class="headers">Register A New Account</h2>
+        <div id="log_in_forms">
+            <!--Error Message-->
+            <?php
+                if(isset($_GET['error']) && $_GET['error']=='err'){
+                    echo '<h4>'.$_GET['message'].'</h4>';
+                }
+            ?>
         <div class="sign_Up">
             <!--Page Content-->
             <form action="sign_up.php" method="post">
@@ -24,6 +31,7 @@
                 <button type="submit" value='submit' name='register' class="button">Register</button>
             </form>
         </div>
+
             <!--Form Processing-->
             <?php
                 if(isset($_POST['register']) && $_POST['register']=='submit'){
