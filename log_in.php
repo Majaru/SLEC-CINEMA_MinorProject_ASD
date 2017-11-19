@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="Styles.css" type="text/css" rel="stylesheet" />
+        <title>Log In</title>
+      
     </head>
-    <body>
-        <h1>Log In with You Account</h1>
-        <form action="" method="post" id="sign_up_forms">
-            <h2>User Name:<br><input type="text" name="l_name" value="" id="loginFields" maxlength="30"></h2>
-            <h2>Password:<br><input type="password" name="l_password" value="" id="loginFields" maxlength="30"></h2>
-            
-            <input id="btn_submit" type="submit" value="Log In" name="submit_forms"<br><br>
-        </form>
-        <?php
-            include_once('show_movies.php');
-            if(isset($_POST['submit_forms']) && $_POST['submit_forms']=='Log In'){
-                $userInfo=log_in($_POST['l_name'],$_POST['l_password']);
-                $name=urlencode($userInfo[0][2]);
-                $access=urlencode($userInfo[0][3]);
-                echo $name;
-                //send data
-                header('Location: index.php?log=loggedin&access='.$access.'&name='.$name);
-                exit;
-            }else{
+    <body class="bodyLog_in" id="fontsALL">
+        
 
-            }
-        ?>
+
+        <h2 class="headers">Log In With Your Account</h2>
+            
+            <div class="log_in_forms_for_Log_in">
+                <div class="registerHere">Don't have an Account?<br><br> 
+                &nbsp&nbsp&nbsp&nbsp<a href="sign_up.php" class="back" >Sign Up</a>
+            </div>
+            <div class = "vl"></div>
+
+                <form action="log_in.php" method="post">
+                <div>
+                    <h3 ><font color="white">Email </font></h3>
+                </div>
+                    <input type="text" name="user_name" value="" size="80%">
+                <h3><font color="white">Password </font></h3>
+                    <input type="password" name="user_password" value="" size="80%">
+                <br><br>
+                <button type="submit" name="submit" value="login" class="button" >Log In</button>
+            </form>
+            </div>
+        <!--Form Processing-->
+        
     </body>
 </html>
