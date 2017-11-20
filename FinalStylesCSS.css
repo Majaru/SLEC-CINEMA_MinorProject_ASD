@@ -258,3 +258,58 @@ div.posButton {
   top: 625px;
   left:132px;
 }
+
+div.boxes {
+    background-color: lightgrey;
+    width: 250px;
+    height: 350px;
+    padding: 25px;
+    margin: 25px;
+}
+div.boxes ,p.title {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+}
+div.boxes ,p.place {
+  position: absolute;
+  top: 220px;
+  left: 10px;
+}
+div.boxes ,p.date {
+  position: absolute;
+  top: 250px;
+  left: 10px;
+}
+div.boxes ,p.tg {
+  position: absolute;
+  top: 280px;
+  left: 10px;
+}
+
+div.posBox {
+  position: absolute;
+  top: -25px;
+  left: 100px;
+}
+
+div.eventImgPos img {
+  width: 300px;
+  height: 190px;
+}
+
+div.eventImgPos {
+  position: absolute;
+  top: 280px;
+  left: 135px;
+}
+
+div.all {
+  position: absolute;
+  top: -2px;
+  left: 400px;
+}
+dev.all2 {
+  
+}
+/*description*/
