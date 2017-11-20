@@ -130,3 +130,196 @@ input[type=Number] ,select , textarea{
     transition: 0.5s;
     color: white;
 }
+
+#error_message {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: block;
+    margin-right: 50%;
+    padding: 10px;
+    background-color: #FF4040;
+}
+#register {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF9200;
+}
+select {
+    font-size: 15px;
+}
+#odd {
+
+  color: white;
+
+ 
+}
+#even {
+
+  color: white;
+ 
+
+}
+.headers {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+.actions {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #D87B00;
+    color: #FFFFFF;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.actions:hover {
+    text-decoration: none;
+    padding-top: 15px;
+    background-color: #FF9E1F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.my_events {
+    border-style: dashed;
+    border-color: #7E4700;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.others {
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  float: left;
+  align-content: center;
+  border-radius: 50px;
+}
+#bois a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    padding: 3px;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: black;
+    transition: 0.3s;
+    
+}
+#bois a:hover {
+    color: white;
+    font-size: 20px;
+    width: 33%;
+    padding: 3px;
+    padding-top: 12px;
+    padding-left: 37%;
+    padding-right: 37%;
+    background-color: #FF7400;
+    transition: 0.3s;
+}
+#bois a:visited {
+    text-decoration: none;
+    font-size: 20px;
+    width: 33%;
+    padding: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    color: white;
+    transition: 0.3s;
+}
+
+.others2 {
+  background-color: black;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  float: left;
+  margin-left: 0%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.others2 h2 {
+
+  color: white;
+
+}
+.others2 h3 {
+  color:white;
+  
+}
+
+.others2 input {
+  color:black;
+  
+}
+
+.others3 {
+  position: absolute;
+  top:120px;
+  left: 220px;
+  background-color: black;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  margin-left: 0%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.others3 h2 {
+  color: white;
+}
+.others3 p{
+  color:white;
+}
+.others3 h4{
+  color:white;
+}
