@@ -143,5 +143,30 @@
             case 21:    return 'Tradeshow, Consumershow, or Expo';
         }
     }
-   
+    function return_topic($value){
+        switch ($value){
+            case 1: return 'None';
+            case 2: return 'Auto Boat & Air';
+            case 3: return 'Business & Professional';
+            case 4: return 'Charity & Causes';
+            case 5: return 'Comunity & Culture';
+            case 6: return 'Family & Education';
+            case 7: return 'Fashion & Beauty';
+            case 8: return 'Film, Media & Entertainment';
+            case 9: return 'Food & Drink';
+            case 10: return 'Government & Polictics';
+            case 11: return 'Health & Wellness';
+            case 12: return 'Hobbies & Special Interest';
+            case 13: return 'Home & Lifestyle';
+            case 14: return 'Music';
+            case 15: return 'Other';
+            case 16: return 'Performing & Visual Arts';
+            case 17: return 'Religion & Spirituality';
+            case 18: return 'School Activities';
+            case 19: return 'Science & Technology';
+            case 20: return 'Seasonal & Holiday';
+            case 21: return 'Sports & Fitness';
+            case 22: return 'Travel & Outdoor';
+        }
+    }
 ?>
