@@ -118,5 +118,30 @@
                 return 'December';
         }
     }
+    function return_type($value){
+        switch($value){
+            case 1: return 'None';
+            case 2: return 'Appearance Or Singing';
+            case 3: return 'Attraction';
+            case 4: return 'Camp, Trip, or Retreat';
+            case 5: return 'Class, Training, or Workshop';
+            case 6: return 'Concert or Performance';
+            case 7: return 'Conference';
+            case 8: return 'Convention';
+            case 9: return 'Dinner or Gala';
+            case 10:    return 'Festival or Fair';
+            case 11:    return 'Game or Competition';
+            case 12:    return 'Meeting or Networking Event';
+            case 13:    return 'Other';
+            case 14:    return 'Party or Social Gathering';
+            case 15:    return 'Race or Endurance Event';
+            case 16:    return 'Rally';
+            case 17:    return 'Screening';
+            case 18:    return 'Seminar or Talk';
+            case 19:    return 'Tour'; 
+            case 20:    return 'Tournament';
+            case 21:    return 'Tradeshow, Consumershow, or Expo';
+        }
+    }
    
 ?>
