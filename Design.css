@@ -29,3 +29,54 @@ input[type=Number] ,select , textarea{
 #log_in_forms2 {
     margin-left: 20%;
 }
+.button {
+    background-color: #AE6400; /* Green */
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #FF9200;
+    border-radius: 13px;
+    transition: 0.5s;
+    color: white;
+}
+.back {
+    background-color: #AE6400; /* Green */
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.back:hover {
+    background-color: #FF9200;
+    border-radius: 13px;
+    transition: 0.5s;
+    color: white;
+}
+#error_message {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: block;
+    margin-right: 50%;
+    padding: 10px;
+    background-color: #FF4040;
+}
+#register {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF9200;
+}
+select {
+    font-size: 15px;
+}
