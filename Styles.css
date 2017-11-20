@@ -1,0 +1,28 @@
+#left {
+    float: Left;
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    margin-right: 1%;
+}
+#right {
+    float: right;
+    text-align: right;
+    display: block;
+    margin-top: 15px;
+    margin-right: 1%;
+}
+
+h4.e_info{
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}h3.e_info{
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}textarea.e_info,h5.e_info,h2.e_info{
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
