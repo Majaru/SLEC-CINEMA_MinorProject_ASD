@@ -1,0 +1,75 @@
+
+
+body {
+  background-image: url("../images/trybg.jpg");
+  background-repeat:;
+}
+
+
+/* navigation panel design */
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin : 0;
+    padding: 0;
+    width: 790.9%;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16.5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li :hover {
+  color: #AE6400;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ul.topnav3 {
+    list-style-type: none;
+    margin : 0;
+    padding: 0;
+    width: 198.2%;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+/* Float the list items side by side */
+ul.topnav3 li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav3 li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16.5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav3 li :hover {
+  color: #AE6400;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav3 li.icon {display: none;}
+
+
