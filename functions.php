@@ -36,5 +36,41 @@
         return TRUE;
     }
     //R = Return a query
-   
+    function return_values($select,$from,$where,$table_number){
+        $conn = connect_to_database('localhost','cinema_admin','admin','event_db',true);
+        $query="select ".$select." from ".$from." ".$where;
+        $result = mysqli_query($conn,$query);
+        if(!$result){
+            die("Query Failed");
+        }else {
+            $cLine = array();
+            //3. Use Returned Rows //
+            while($row = mysqli_fetch_assoc($result)){
+                switch($table_number){
+                    // Users Table
+                    case 1:{
+                        $cLine[] = array($row['id'],$row['email'],$row['password'],$row['fname'],$row['lname'],);
+                        break;
+                    }
+                    // Events Table
+                    case 2:{
+                        $cLine[] = array($row['id'],$row['title'],$row['location'],$row['e_date'],$row['e_from'],$row['e_to'],$row['details'],$row['organizer'],$row['org_details'],$row['price'],$row['image'],$row['image_name'],$row['user_id'],$row['e_type'],$row['e_topic']);
+                        break;
+                    // Purchases Table
+                    }case 3:{
+                        $cLine[] = array($row['id'],$row['admin_id'],$row['participant_id'],$row['name'],$row['event_id'],$row['event_title'],$row['event_start'],$row['payment']);
+                        break;
+                    }
+                }
+            }
+            //4. Release Data From Result
+            mysqli_free_result($result);
+            //5. Close Connection
+            mysqli_close($conn);
+            
+            return $cLine;
+        }
+
+    }
+    
 ?>
