@@ -426,3 +426,30 @@ select {
 .my_eventsTable h4{
   color:white;
 }
+
+.my_Joined_EventsTable h2 {
+  color: white;
+}
+.my_Joined_EventsTable h5{
+  color:white;
+}
+.my_Joined_EventsTable h3 {
+  color: white;
+}
+.my_Joined_EventsTable h4{
+  color:white;
+}
+.my_Joined_EventsTable a {
+  color: white;
+}
+
+.my_Joined_EventsTable a:hover {
+  color: white;
+}
+.my_Joined_EventsTable a:visited {
+  color: white;
+}
+
+#fontsALL {
+  font-family: "Open Sans", Times, sans-serif
+}
