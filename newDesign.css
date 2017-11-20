@@ -453,3 +453,61 @@ select {
 #fontsALL {
   font-family: "Open Sans", Times, sans-serif
 }
+.my_Joined_EventsTable {
+ 
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 10px;
+    border: none;
+
+}
+
+
+.view_ParticipantsTable {
+ 
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 10px;
+  border: none;
+
+}
+
+.view_ParticipantsTable h2 {
+  color: white;
+}
+.view_ParticipantsTable h5{
+  color:white;
+}
+.view_ParticipantsTable h3 {
+  color: white;
+}
+.view_ParticipantsTable h4{
+  color:white;
+}
+
+.view_ParticipantsTable a {
+  color: white;
+}
+
+.view_ParticipantsTable a:hover {
+  transition: 0.3s;
+  color: #FF7400;
+}
+.view_ParticipantsTable a:visited {
+  color: white;
+}
+
+.admin_table {
+ 
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 10px;
+  border: none;
+
+}
