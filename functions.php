@@ -72,5 +72,14 @@
         }
 
     }
+    //Update
+    function update_values($table,$set,$where){
+        $query='update '.$table.' set '.$set.' where '.$where;
+        $conn = connect_to_database('localhost','cinema_admin','admin','event_db',true);
+        $result = mysqli_query($conn,$query);
+
+        mysqli_close($conn);
+        return TRUE;
+    }
     
 ?>
