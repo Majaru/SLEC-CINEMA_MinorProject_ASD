@@ -323,3 +323,26 @@ select {
 .others3 h4{
   color:white;
 }
+
+.sign_Up {
+  position: absolute;
+  top:100px;
+  left: 360px;
+  background-color: black;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  margin-left: 0%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.sign_Up h2 {
+  color: white;
+}
+.sign_Up p{
+  color:white;
+}
+.sign_Up h4{
+  color:white;
+}
