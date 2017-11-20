@@ -81,5 +81,13 @@
         mysqli_close($conn);
         return TRUE;
     }
-    
+    //Delete
+    function delete_values($from,$where){
+        $conn = connect_to_database('localhost','cinema_admin','admin','event_db',true);
+        $query='delete from '.$from.' where '.$where;
+        mysqli_query($conn,$query);
+        mysqli_close($conn);
+        return true;
+    }
+  
 ?>
