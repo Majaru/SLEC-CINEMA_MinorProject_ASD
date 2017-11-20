@@ -226,3 +226,35 @@ input[type=text] {
 }
 
 /*end of image slider*/
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16.5px 113px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 0px solid white;
+}
+
+.button3:hover {
+    background-color: #AE6400;
+    color: white;
+}
+
+div.posButton {
+  position: relative;
+  top: 625px;
+  left:132px;
+}
