@@ -3,7 +3,7 @@
         <link rel="stylesheet" type="text/css" href="../CSS/Design.css">
         <link rel="stylesheet" type="text/css" href="../CSS/newDesign.css">
     </head>
-    <body class="bodyAdd_image" id="fontsALL">
+    <body style="padding-right: 50px" class="bodyAdd_image" id="fontsALL">
         <h1 class="headers">Choose The Event Image</h1>
 
         <div class="update_Image_align">
